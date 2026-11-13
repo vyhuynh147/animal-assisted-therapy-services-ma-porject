@@ -1,37 +1,43 @@
 
-import "./App.css";
 import logo from './logo.png';
-import halfImg from "./halfimage.png";
+// import halfImg from "./halfimage.png";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Navbar } from "./Navbar.jsx";
+import "./App.css";
 
-// console.log(logo);
-
-function App() {
+function App () {
   return (
-    <div>
-      <Imglogo />
-      <Header />
+    <BrowserRouter>
+    <div className = "App" >
       <Navbar />
-      {/* <Halfimage /> */}
-
-      {/* <img src = {logo} alt= " aasma Logo" /> */}
     </div>
+
+
+  <Routes>
+    <Route path = "/" element = { <Home />} />
+    <Route path = "/about-us" element = { <About />} />
+    <Route path = "/programs" element = { <Programs />} />
+    <Route path = "/Contact" element = { <Contact />} />
+  </Routes>
+  </BrowserRouter>
   );
 }
 
 
-function Navbar () {
-  return (
-    <nav className="Navbar">
-      <ul>
-        <li><a href = "/"> Home </a></li>
-        <li><a href = "/about"> About Us </a></li>
-        <li><a href = "/programs"> Programs </a></li>
-        <li><a href = "/Contact"> Contact Us </a></li>
-        <li><a href = "/Infor"> I</a></li>
-      </ul>
-    </nav>
-  );
-}
+// function App() {
+//   return (
+//     <div className="App"> 
+//     <Navbar />
+//     {/* <Imglogo /> */}
+//     <Header /> 
+
+
+//     </div>
+//   );
+// }
+
+
+
 function Imglogo () {
   return (
     <div className="Logo">
@@ -41,13 +47,25 @@ function Imglogo () {
 }
 
 
+function Navbar () {
+  return (
+    <nav className="Navbar">
+      <ul>
+        <li><a href = "/"> HOME </a></li>
+        <li><a href = "/about"> ABOUT US </a></li>
+        <li><a href = "/programs"> PROGRAMS </a></li>
+        <li><a href = "/Contact"> CONTACT US </a></li>
+      </ul>
+    </nav>
+  );
+}
+
 
 
 function Header() {
   return (
     <div className= "Header"> 
 
-    <Navbar />
       <title> Animal Assisted Therapy Services MA </title>
       <h1> Animal Assisted Therapy Services <abbr> MA</abbr> </h1>
       <h2> 501c3 Nonprofit organization proudly serving Massachusetts </h2>
@@ -55,13 +73,13 @@ function Header() {
   );
 }
 
-function Halfimage() {
-  return (
-    <div className= "Half-image-container"> 
-      <img src = {halfImg} alt = "Half width" className= "Half-image" /> 
-    </div>
-  );
-}
+// function Halfimage() {
+//   return (
+//     <div className= "Half-image-container"> 
+//       <img src = {halfImg} alt = "Half width" className= "Half-image" /> 
+//     </div>
+//   );
+// }
 
 
 export default App; 
