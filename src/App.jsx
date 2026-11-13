@@ -8,30 +8,44 @@ import halfImg from "./halfimage.png";
 function App() {
   return (
     <div>
-      <Navbar />
+      <Imglogo />
       <Header />
-      <Halfimage />
+      <Navbar />
+      {/* <Halfimage /> */}
 
-      <img src = {logo} alt= " aasma Logo" />
+      {/* <img src = {logo} alt= " aasma Logo" /> */}
     </div>
   );
 }
 
-function Navbar() {
+
+function Navbar () {
   return (
-    <nav className= "Navbar">
+    <nav className="Navbar">
       <ul>
-        <li><a href = "#"> Home </a></li>
-        <li><a href= "#"> ABout Us</a></li>
-        <li><a href= "#"> Programs</a></li>
+        <li><a href = "/"> Home </a></li>
+        <li><a href = "/about"> About Us </a></li>
+        <li><a href = "/programs"> Programs </a></li>
+        <li><a href = "/Contact"> Contact Us </a></li>
+        <li><a href = "/Infor"> I</a></li>
       </ul>
     </nav>
   );
 }
+function Imglogo () {
+  return (
+    <div className="Logo">
+      < img src = {logo} alt = "assma logo" className="Logo" />
+    </div>
+  ); 
+}
+
+
+
 
 function Header() {
   return (
-    <div className=" Header"> 
+    <div className= "Header"> 
 
     <Navbar />
       <title> Animal Assisted Therapy Services MA </title>
@@ -48,5 +62,6 @@ function Halfimage() {
     </div>
   );
 }
+
 
 export default App; 
