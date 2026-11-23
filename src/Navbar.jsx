@@ -1,15 +1,21 @@
-// import { Link } from "react-router-dom";
+import logo from "./logo.png";
+import {Link} from "react-router-dom";
 
-
-// export const Navbar = () => {
-//     return (
-//     <nav> 
-//         <ul>
-//             <li><link to = "/home"> HOME </link></li>
-//             <li><link to = "/about-us"> ABOUT US </link></li>
-//             <li><link to = "/programs"> PROGRAMS </link></li>
-//             <li><link to = "/contact"> CONTACT </link></li>
-//         </ul>
-//     </nav>
-//     );
-// };
+export function Navbar() {
+    return (
+        <nav className = "Navbar"> 
+        <div className="Logo">
+            <Link to= "/">
+                < img src = {logo} alt = "assma logo" className="Logo" />
+            </Link>
+        </div>
+        
+        <ul>
+            <li><Link to="/"> Home </Link></li>
+            <li><Link to= "/aboutus"> About Us </Link></li>
+            <li><Link to= "/programs"> Programs </Link></li>
+            <li><Link to= "/contact"> Contact Us </Link></li>
+        </ul>
+        </nav>
+    );
+}
