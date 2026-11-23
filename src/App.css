@@ -17,8 +17,58 @@ h2 {
 
 }
 
-.navbar {
+.Navbar {
     display: flex;
     justify-content: center;
+    background-color: white;
+    align-items: center;
+    padding:15px 30px;
+    margin-bottom: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 10px 10px rgb(91, 67, 130)
+
     
 }
+
+.nav_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.nav_logo {
+    height: 45px;
+    display: block;
+}
+
+.nav_links {
+    display: flex;
+    gap:25px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav_button {
+    color: green;
+    cursor: pointer;
+
+    
+} 
+
+/* intro in About */
+.intro{
+    display:flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* a.hover {
+    color: blue;
+} */

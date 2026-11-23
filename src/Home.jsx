@@ -1,8 +1,12 @@
+import dogImg from "./dog.png";
+ 
  export function Home () {
     return (
         <div>
             <Header/>
+            <MainImg/>
             <Topic/>
+            <News/>
         </div>
     );
 }
@@ -19,17 +23,36 @@ function Header() {
   );
 }
 
+function MainImg () {
+  return (
+    <div className="Img">
+      <img src = {dogImg} alt = "Main Img" className="main-img"/>
+    </div>
+  );
+}
+
+
 function Topic () {
     return (
         <div className= "Topic">
             <h2> Connecting People Through Animals </h2>
             <p> At AATS MA, we believe that animals have a special way of bringing people comfort and happiness.
-                 THorugh animal assisted therapy,
-                we connct people with trianed therapy animals to create meaningful experiences, build connections,
+              Through animal assisted therapy
+                we connect people with trained therapy animals to create meaningful experiences, build connections,
                  and bring a little more joy to everyday life.</p>
         </div>
     );
 }
+
+function News () {
+  return (
+    <div className="News">
+       
+    </div>
+  );
+}
+
+
 
 
 
