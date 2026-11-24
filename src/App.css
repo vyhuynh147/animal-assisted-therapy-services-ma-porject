@@ -11,11 +11,8 @@ h2 {
     text-align:center
 }
 
-.halfimage {
-    width: 50px;
-    height:auto;
 
-}
+/* Navigvation bar */
 
 .Navbar {
     display: flex;
@@ -46,29 +43,41 @@ h2 {
 }
 
 .nav_links {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 50px;
+    color: green;
     display: flex;
     gap:25px;
     margin: 0;
     padding: 0;
-    list-style: none;
+    transition: blue 0.3s ease;
 }
+
+/* .nav_box {
+    box-sizing: border-box;
+    display: block;
+    box-shadow: none ;
+    color: blue;
+} */
 
 .nav_button {
     color: green;
-    cursor: pointer;
-
-    
+    cursor: pointer; 
 } 
 
 /* intro in About */
-.intro{
+/* .intro{
     display:flex;
     text-align: center;
     align-items: center;
     justify-content: center;
 
-}
-
-/* a.hover {
-    color: blue;
 } */
+
+.Teams {
+    text-align: center;
+    text-decoration-color:green;
+    font-size:30px;
+
+}
