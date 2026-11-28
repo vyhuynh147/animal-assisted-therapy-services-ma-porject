@@ -15,10 +15,7 @@ import dogImg from "./dog.png";
 function Header() {
   return (
     <div className= "Header"> 
-
       <title> Animal Assisted Therapy Services MA </title>
-      <h1> Animal Assisted Therapy Services <abbr> MA</abbr> </h1>
-      <h2> 501c3 Nonprofit organization proudly serving Massachusetts </h2>
     </div>
   );
 }
@@ -26,10 +23,15 @@ function Header() {
 function MainImg () {
   return (
     <div className="Img">
-      <img src = {dogImg} alt = "Main Img" className="main-img"/>
+      <img src = {dogImg} alt = "Main Img" className="main-img" />
+      <div className= "Img_text">
+        <h1> Animal Assisted Therapy Services <br/> MA </h1>
+        <h3> 501c3 Nonprofit organization proudly serving Massachusetts </h3>
+      </div>
     </div>
   );
 }
+
 
 
 function Topic () {

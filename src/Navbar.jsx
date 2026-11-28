@@ -5,23 +5,22 @@ export function Navbar() {
     return (
         <nav className = "Navbar"> 
             <div className="nav_container">
-                <div className="nav_button"> 
-                    <div className="nav_links">
-                    </div>
-                </div>
+
                 <div className="Logo">
                     <Link to= "/">
-                        < img src = {logo} alt = "assma logo" className="Logo" />
+                        <img src = {logo} alt = "assma logo" className="Logo" />
                     </Link>
-            </div>
+                </div>
         
-        <ul className="nav_links">
-            <li><Link to="/"> Home </Link></li>
-            <li><Link to= "/aboutus"> About Us </Link></li>
-            <li><Link to= "/programs"> Programs </Link></li>
-            <li><Link to= "/contact"> Contact Us </Link></li>
-        </ul>
+                <ul className="nav_links">
+                    <li><Link to="/"> Home </Link></li>
+                    <li><Link to= "/aboutus"> About Us </Link></li>
+                    <li><Link to= "/programs"> Programs </Link></li>
+                    <li><Link to= "/contact"> Contact Us </Link></li>
+                </ul>
+
             </div>
         </nav>
     );
 }
+
